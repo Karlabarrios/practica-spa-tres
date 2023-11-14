@@ -1,0 +1,43 @@
+/*Hoja de estilos spa*/
+/*Generales*/
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+
+/*Header*/
+header{
+    background-image: url(../imagenes/dummy-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+header img{
+    padding: 82px;
+}
+
+/*Nav*/
+nav{
+    text-align: center;
+    background-color: #abbf15;
+}
+nav a{
+    color: #fff;
+    padding: 24px;
+    display: inline-block;
+    font-size: 18px;
+    transform: scale(.9);
+}
+nav a:hover{
+    background-color: #545e03;
+    transform: scale(1);
+}
