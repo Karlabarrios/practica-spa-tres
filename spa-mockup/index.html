@@ -4,34 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spa Bienestar</title>
     <!--Metadescripción-->
-    <meta name="description" content="">
+    <meta name="description" content="Sumérgete en la serenidad de nuestro spa: oasis de relajación y rejuvenecimiento. Descubre bienestar y armonía en cada experiencia única.">
     <!--Favicon-->
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!--Typo-->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <!--Estilos con css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--Header-->
-    <header>
+    <header id="inicio">
         <img src="imagenes/logo.png" alt="logo-spa">
     </header>
     <!--Menú nav-->
     <nav>
-        <a href="">INICIO</a>
-        <a href="">QUIÉNES SOMOS</a>
-        <a href="">TRATAMIENTOS</a>
+        <a href="#inicio">INICIO</a>
+        <a href="#quienes">QUIÉNES SOMOS</a>
+        <a href="#tratamientos">TRATAMIENTOS</a>
         <a href="">TARIFAS</a>
         <a href="">LOCALIZACIÓN</a>
     </nav>
     <!--Seción 1-->
-    <section>
+    <section class="quienes-somos" id="quienes">
         <h2>QUIÉNES SOMOS</h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus sit blanditiis, voluptatum amet ipsa ullam quia porro, excepturi vel quisquam rem beatae ipsum aspernatur labore exercitationem placeat aliquam magnam.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt laborum vel enim officia reiciendis cumque tenetur autem reprehenderit, earum culpa dolores saepe, tempora animi? Dicta tempore facere nostrum illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque, consequuntur sit qui ut autem mollitia expedita laborum et voluptatibus voluptates at eum placeat amet deleniti dolorum explicabo nostrum impedit.</p>
     </section>
+    <!--Seción 2-->
+    <section class="tratamientos" id="tratamientos">
+        <h2>TRATAMIENTOS</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus sit blanditiis, voluptatum amet ipsa ullam quia porro, excepturi vel quisquam rem beatae ipsum aspernatur labore exercitationem placeat aliquam magnam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt laborum vel enim officia reiciendis cumque tenetur autem reprehenderit, earum culpa dolores saepe, tempora animi? Dicta tempore facere nostrum illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque, consequuntur sit qui ut autem mollitia expedita laborum et voluptatibus voluptates at eum placeat amet deleniti dolorum explicabo nostrum impedit.</p>
+    </section>
+
+
+
+    <!--Script JQuery para smooth scroll-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
 </body>
 </html>

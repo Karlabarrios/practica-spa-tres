@@ -1,43 +1,73 @@
 /*Hoja de estilos spa*/
 /*Generales*/
-*{
+* {
     margin: 0;
 }
-a{
+a {
     text-decoration: none;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 200;
 }
-p{
-    font-size: 20px;
+p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
-h2{
-    font-size: 30px;
+h2 {
+    font-size: 40px;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
+/* html {
+    scroll-behavior: smooth;
+} */
 
 /*Header*/
-header{
+header {
     background-image: url(../imagenes/dummy-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
 }
-header img{
+header img {
     padding: 82px;
 }
 
 /*Nav*/
-nav{
+nav {
     text-align: center;
-    background-color: #abbf15;
+    background-color: #ABBF15;
+    position: sticky;
+    top: 0;
 }
-nav a{
+nav a {
     color: #fff;
     padding: 24px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     transform: scale(.9);
 }
-nav a:hover{
-    background-color: #545e03;
+nav a:hover {
+    background-color: #4F5904;
     transform: scale(1);
+    font-weight: 500;
+}
+
+/*Secciones*/
+/*Sección QUIÉNES SOMOS*/
+.quienes-somos{
+    text-align: center;
+    background-color: #ABBF15;
+    color: #fff;
+    padding: 75px 12%;
+}
+/*Sección TRATAMIENTOS*/
+.tratamientos{
+    text-align: center;
+    background-color: #4F5904;
+    color: #fff;
+    padding: 75px 12%;
 }
