@@ -73,6 +73,36 @@ nav a:hover {
     color: #fff;
     padding: 75px 12%;
 }
+.tratamientos p{
+    margin: 0;
+}
+.tra-div{
+    display: inline-block;
+    margin: 0 40px 0 40px;
+}
+.facial{
+    position: relative;
+    top: 93px;
+}
+.corporal{
+    position: relative;
+    top: 88px;
+}
+.spa{
+    position: relative;
+    top: 80px;
+}
+.circulo-blanco{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 50px;
+}
+.tra-div p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
 /*Sección TARIFAS*/
 .tarifas {
     text-align: left;
@@ -105,7 +135,36 @@ nav a:hover {
 .localizacion {
     text-align: center;
     color: #4F5904;
-    padding: 75px 12%;
+    padding: 75px 12% 24px;
+}
+.div-mapa {
+    text-align: center;
+    margin-bottom: -5px;
+}
+.mapa{
+    width: 100%;
 }
 
 /*Footer*/
+footer {
+    background-color: #4F5904;
+    padding: 60px 12%;
+    color: #fff;
+    text-align: center;
+}
+footer img{
+    margin: 0 5px 15px 5px;
+    width: 70px;
+}
+.logo-footer{
+    display: block;
+}
+footer p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+footer hr{
+    border-color: #ABBF15;
+}
